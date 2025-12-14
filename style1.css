@@ -1,0 +1,136 @@
+section {
+    border: 2px solid #d38daa;
+    border-radius: 0;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #FAE6E7;
+}
+header {
+    background: #ff8fab;
+    padding: 1rem;
+    text-align: center;
+}
+footer {
+    background: #ff8fab;
+    padding: 1rem;
+    text-align: center;
+}
+nav a {
+    margin: 0 1rem;
+    text-decoration: none;
+    color: #111111;
+}
+main {
+    display: flex;
+    padding: 2rem;
+}
+section {
+    flex: 1;
+    margin: 0 1rem;
+}
+img {
+    max-width: 150px;
+    border-radius: 50%;
+}
+form input[type="text"],
+form input[type="email"] {
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 0.25rem;
+    margin-bottom: 1rem;
+    border: 1px solid #e9909f;
+    border-radius: 4px;
+    background-color: #fdeeef;
+}
+form input[type="submit"] {
+    background: #81043fd7;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    cursor: pointer;
+    border-radius: 4px;
+}
+form input[type="submit"]:hover {
+    background: #555;
+}
+
+textarea#msgBox {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #e9909f;
+    border-radius: 4px;
+    background-color: #fdeeef;
+    margin-top: 0.5rem;
+}
+
+button {
+    margin: 0.5rem 0.25rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    background-color: #d38daa;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #81043fd7;
+}
+
+
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color: #880f31;
+    color: #f0d8d9;
+}
+
+body.dark-mode header,
+body.dark-mode footer {
+    background: #520418;
+    color: #ff9cb6;
+}
+
+body.dark-mode a {
+    color: #ff9cb6;
+}
+
+body.dark-mode a:hover {
+    color: #ffd1dc;
+}
+
+body.dark-mode section {
+    border-color: #888;
+    background-color: #1e1e1e;
+}
+
+body.dark-mode form input[type="text"],
+body.dark-mode form input[type="email"],
+body.dark-mode textarea#msgBox {
+    background-color: #2a2a2a; 
+    border: 1px solid #555;    
+    color: #f0f0f0;            
+}
+
+body.dark-mode form input[type="submit"] {
+    background: #851153;       
+    color: #e8d6df;            
+}
+
+body.dark-mode form input[type="submit"]:hover {
+    background: #44157d;       
+}
+
+body.dark-mode button {
+    background-color: #851153;    
+    color: #e8d6df;
+}
+body.dark-mode button:hover {
+    background-color: #44157d;
+}

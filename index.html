@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Profile</title>
+    <link rel="stylesheet" href="style1.css">
+    <script src="script.js" defer></script>
+</head>
+<body bgcolor="#FAE6E7">
+
+<header>
+    <h1>My Profile</h1>
+    <nav>
+        <strong><a href="#home">Home</a></strong>
+        <strong><a href="#about">About Me</a></strong>
+    </nav>
+</header>
+
+<main>
+    <!-- LEFT COLUMN -->
+    <section id="home" bgcolor="white">
+        <img src="biancs.png" alt="Profile Image">
+    
+        <h2>Ma. Bianca F. Lim</h2>
+        <h3 id="jobTitle"><em>UI/UX Designer, Network Administrator</em></h3>
+
+        <p>
+            Hello! I’m <strong>Ma. Bianca F. Lim</strong>, a dedicated 
+            <em>UI/UX Designer</em> and <em>Network Administrator</em>. 
+            I specialize in creating intuitive user experiences and ensuring reliable network systems. 
+            With a strong foundation in frontend development, I enjoy combining design and technology 
+            to deliver efficient and user-friendly solutions.
+        </p>
+
+        <button id="themeBtn">Toggle Dark Mode</button>
+        <button id="editJobBtn">Edit Job Title</button>
+        <button id="toggleSkillsBtn">Hide Skills</button>
+
+        <h3>Contact</h3>
+        <p>Email: <a href="mailto:limmf1@students.nu-fairview.edu.ph">limmf1@students.nu-fairview.edu.ph</a></p>
+        <p>Mobile Number: <a href="tel:+699123456789">+69 912 345 6789</a></p>
+
+        <h3>Skills</h3>
+        <div id="skillsSection">
+            <dl>
+                <dt>Frontend</dt>
+                <dd>HTML</dd>
+                <dd>CSS</dd>
+                <dd>JavaScript</dd>
+                <dd>Python</dd>
+            </dl>
+        </div>
+
+        <h3>Motivational Quote</h3>
+        <button id="quoteBtn">Show Motivational Quote</button>
+        <p id="quoteDisplay"></p>
+    </section>
+
+    <!-- RIGHT COLUMN -->
+    <section id="about" bgcolor="white">
+        <h2>About Me</h2>
+
+        <h3>Background</h3>
+        <ul>
+            <li>BS Information Technology Graduate</li>
+            <li>Lives in San Jose Del Monte, Bulacan</li>
+        </ul>
+
+        <h3>Certifications</h3>
+        <ul>
+            <li>Certified User Experience Analyst (CXA) by Human Factors International (HFI)</li>
+            <li>UX Design Certificate by AGI</li>
+            <li>UX Certification by NN/g</li>
+            <li>UX/UI Designer Certification by Uxcel</li>
+            <li>Cisco Certified Network Associate (CCNA)</li>
+            <li>CompTIA Network+</li>
+            <li>Cisco Certified Network Professional (CCNP)</li>
+        </ul>
+
+        <h3>Interests and Hobbies</h3>
+        <ul>
+            <li>Play mobile games</li>
+            <li>Cook</li>
+            <li>Bake</li>
+            <li>Read books</li>
+            <li>Watch movies and series</li>
+        </ul>
+
+        <h2>Message Me</h2>
+        <form onsubmit="return validateForm()">
+            <label>
+                Name:<br>
+                <input type="text" id="nameField" name="name">
+            </label><br>
+            <label>
+                Email:<br>
+                <input type="email" id="emailField" name="email">
+            </label><br>
+            
+            <label>
+                Email Body:<br>
+            <textarea id="msgBox" maxlength="200"></textarea>
+            <p>Characters left: <span id="counter">200</span></p>
+            </label><br>
+            
+            <input type="submit" value="Send">
+        </form>
+    </section>
+</main>
+
+<footer>
+    <strong>WebProg - Web Programming 2025</strong>
+
+    <p id="dateDisplay"></p>
+</footer>
+
+</body>
+</html>
